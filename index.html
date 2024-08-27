@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> kitchen</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/34d0e0ea93.js" crossorigin="anonymous"></script>
+    <!-- font awesome link -->
+     <!-- font family link -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+     
+     <!-- font family link -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                color1: '#f1ae0e',
+                color2:'#99E54D',
+              },
+              fontFamily:{
+                font:'"Roboto Mono", monospace',
+              },
+              backgroundImage:{
+                img1:"url('./images/banner1.jpeg')",
+                
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body class="font-font">
+    <header class="w-10/12 mx-auto mb-10">
+       <nav>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <a class="btn btn-ghost text-4xl font-bold">Siam</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-2">
+                <li><a class="text-xl text-semibold hover:text-color1 text-color1">Home</a></li>
+                <li><a class="text-xl text-semibold hover:text-color1">About</a> </li>
+                <li><a class="text-xl text-semibold hover:text-color1">Menu</a></li>
+                <li><a class="text-xl text-semibold hover:text-color1">Contact</a></li>
+                <li><a class="text-xl text-semibold hover:text-color1">Team</a></li>
+                <li><a class="text-xl text-semibold hover:text-color1">Landing</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn hover:text-color1 text-xl font-semibold  ">Nice</a>
+            </div>
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <i class="fa-solid fa-bars text-3xl"></i>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
+                  <li><a class="text-xl text-semibold hover:text-color1">Home</a></li>
+                <li><a class="text-xl  hover:text-color1">About</a> </li>
+                <li><a class="text-xl  hover:text-color1">Menu</a></li>
+                <li><a class="text-xl  hover:text-color1">Contact</a></li>
+                <li><a class="text-xl  hover:text-color1">Team</a></li>
+                <li><a class="text-xl  hover:text-color1">Landing</a></li>
+                </ul>
+              </div>
+          </div>
+       </nav>
+    </header>
+    <section class="w-10/12 mx-auto">
+        <div class="bg-img1 bg-cover bg-center bg-no-repeat-repeat rounded-2xl bg-gradient-to-r from-black to-blue-500 ">
+          <div class="py-10 pl-12">
+              <div class=" bg-color2 w-48 rounded-full py-10 px-10 flex flex-col justify-center items-center ">
+              <h1 class="text-black text-bold text-5xl ">40%</h1>
+               <p class="text-black text-bold text-3xl ">BUSINESS</p>
+               <P class="text-black text-bold text-3xl ">LUNCH</P>
+            </div>
+            <div>
+              <h1 class="mt-5 text-bold text-white md:text-6xl text-4xl leading-tight">Where every <br>ingredient<br>
+                 tells a story</h1>
+            </div>
+
+            <div>
+              <button class="text-white text-xl px-10 py-4 bg-color1 mt-5 rounded-lg">READ MORE</button>
+            </div>
+          </div>
+        </div>
+
+    </section>
+
+    <main>
+
+      <!-- menu section start -->
+       <!-- menu heading -->
+        <div class="text-center my-24">
+          <h1 class="md:text-6xl text-4xl font-semibold">View Our Menu</h1>
+        </div>
+       <!-- menu heading -->
+
+       <section class="w-10/12 mx-auto mb-20">
+          <div class="flex md:flex-row flex-col items-center justify-center gap-6">
+            <div class="flex flex-col items-center justify-center text-center p-5">
+              <div class=" w-56 h-48">
+                <img src="./images/card1.png" alt="" class="w-full h-full  rounded-3xl ">
+              </div>
+              <div>
+                <h1 class="text-xl text-bold uppercase mt-5">hot pizza</h1>
+                <button class="text-white text-xl px-10 py-4 bg-color1 mt-5 rounded-lg">READ MORE</button>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center  p-5">
+              <div class="w-56 h-48">
+                <img src="./images/card2.jpg" alt="" class="w-full h-full  rounded-3xl ">
+              </div>
+              <div>
+                <h1 class="text-xl text-bold uppercase mt-5">salads</h1>
+                <button class="text-white text-xl px-10 py-4 bg-color1 mt-5 rounded-lg">READ MORE</button>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center  p-5">
+              <div class="w-56 h-48">
+                <img src="./images/card3.jpeg" alt="" class="w-full h-full rounded-3xl ">
+              </div>
+              <div>
+                <h1 class="text-xl text-bold uppercase mt-5">dessert</h1>
+                <button class="text-white text-xl px-10 py-4 bg-color1 mt-5 rounded-lg">READ MORE</button>
+              </div>
+            </div>
+            <div class="flex flex-col items-center justify-center text-center  p-5">
+              <div class="w-56 h-48">
+                <img src="./images/card4.jpeg" alt="" class="w-full h-full  rounded-3xl ">
+              </div>
+              <div>
+                <h1 class="text-xl text-bold uppercase mt-5">drinks</h1>
+                <button class="text-white text-xl px-10 py-4 bg-color1 mt-5 rounded-lg">READ MORE</button>
+              </div>
+            </div>
+            
+          </div>
+       </section>
+
+       <!-- menu section end -->
+        
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
